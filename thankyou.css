@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --color-hover-btn-bg: hsl(4, 100%, 67%);
+    --color-btn-bg: hsl(234, 29%, 20%);
+    --color-bg:hsl(235, 18%, 26%);
+    --color-form-border: hsl(0, 0%,58%);
+    --color-btn-text: hsl(0, 0%, 100%);
+    --font-family:'Roboto', sans-serif;
+}
+html,body{
+    height: 100dvh;
+}
+body {
+  font-family:var(--font-family);
+  font-weight: 400;
+  color: var(--color-btn-bg);
+  padding: 1.5rem;
+  display: flex;
+  
+}
+h1, h2, h3, strong {
+  font-weight: 700;
+  
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-block-end: 2rem;
+}
+.dismiss-btn{
+    margin-block-start: auto;
+    border: none;
+    color: var(--color-btn-text);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-btn-bg);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    letter-spacing: 1px;
+
+}
+h1{
+    font-size: 37px;
+    margin-block-end: 1.2rem;
+}
+p{
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 15px;
+}
+
+
+.dismiss-btn:hover{
+    background-color: var(--color-hover-btn-bg);
+    box-shadow: 0 5px 15px var(--color-hover-btn-bg);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1048px) {   
+    body{
+        background-color: var(--color-bg);
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        background-color: var(--color-btn-text);
+        width: 100%;
+        max-width: 700px;
+        padding: 4.5rem;
+        border-radius: 55px;
+    }
+    .dismiss-btn{
+        margin-block-start: unset;
+        padding: 31px;
+        font-size: 25px;
+    }
+    img {
+        width: 90px;
+        height: 90px;
+    }    
+    h1{
+        font-size: 80px;
+    }
+    p{
+        line-height: 39px;
+        font-size: 23px;
+        margin-block-end: 3rem;
+    }
+}
+@media screen and (min-width:1049px){
+    body{
+        background-color: var(--color-bg);
+        justify-content: center;
+        align-items: center;
+    }    
+    main{
+        background-color: var(--color-btn-text);
+        width: 100%;
+        max-width: 344px;
+        padding: 2rem 2.2rem;
+        border-radius: 25px;
+    }    
+    img{
+        width: 40px;
+        height: 40px;
+        margin-block-end: 1.3rem;
+    }
+    p{
+        line-height: 19px;
+        font-size: 13px;
+        margin-block-end: 25px;
+    }
+    .dismiss-btn{
+        padding: 12px;
+        font-size: 10px;
+    }
+    h1{
+        margin-block-end: 0.7rem;
+    }
+}

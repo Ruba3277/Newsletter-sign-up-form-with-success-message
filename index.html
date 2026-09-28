@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <header></header>
+  <main>
+    <section class="newsletter">
+      <div class="img-wrapper">
+        <picture> <!-- Desktop --> 
+          <source media="(min-width: 1025px)" srcset="assets/images/illustration-sign-up-desktop.svg"> 
+          <!-- Tablet --> 
+          <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-tablet.svg"> 
+          <!-- Mobile / default --> 
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="hero"> 
+        </picture>
+      </div>
+      <article class="newsletter-content">
+        <h1 class="newsletter-title">Stay updated!</h1>
+        <p class="newsletter-description">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="newsletter-benefits">
+          <li class="newsletter-benefit">
+            <img src="assets/images/icon-list.svg" class="newsletter-benefit-icon" alt="icon-list">
+            <span class="newsletter-benefit-text"> Product discovery and building what matters</span>
+          </li>
+          <li class="newsletter-benefit">
+            <img src="assets/images/icon-list.svg" class="newsletter-benefit-icon" alt="icon-list">
+            <span class="newsletter-benefit-text"> Measuring to ensure updates are a success</span></li>
+          <li class="newsletter-benefit">
+            <img src="assets/images/icon-list.svg" class="newsletter-benefit-icon" alt="icon-list">
+            <span class="newsletter-benefit-text"> And much more!</span>
+          </li>
+        </ul>
+        <form action="" class="newsletter-form" novalidate>
+          <div class="error"> 
+            <label class="newsletter__label" for="email">Email address</label>
+            <span class="email-error" style="display: none;">Valid Email required</span>
+          </div>
+          <input class="newsletter__input" id="email" type="email" placeholder="email@company.com" required>
+          <button class="newsletter-cta" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </article>
+    </section>
+
+
+
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
